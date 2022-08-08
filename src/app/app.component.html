@@ -1,0 +1,16 @@
+<h1 appChangecolor>HELLO HILNA</h1>
+
+
+<input name="hilna" type="text" #Ref (keyup)="false"/>
+    
+    <button (click)="onClickMe(Ref)"> CLICK ME</button>
+
+<app-child-exp [value]="title" *ngIf="des">
+    <div>{{Ref.value}}</div>
+
+</app-child-exp>
+
+<button (click)="Ondestr()"> Destroy</button>
+
+
+<router-outlet></router-outlet>
